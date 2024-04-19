@@ -1,0 +1,38 @@
+explaining binal language
+
+decimal             6               3               2(binal)             16
+
+0                   0               0               0 - 1 bit           0
+1                   1               1               1 - 1 bit           1
+2                   2               2               10 - 2 bit          2
+3                   3               10              11 - 2 bit          3
+4                   4               11              100 - 3 bit         4
+5                   5               12              101                 5
+6                   10              20              110                 6
+7                   11              21              111                 7
+8                   12              22              1000 - 4 bit        8
+9                   13              100             1001                9
+10                  14              101             1010                a
+11                  15              102             1011                b
+12                  20              110             1100                c
+13                  21              111             1101                d
+14                  22              112             1110                e
+15                  23              120             1111                f
+16                  24              121             10000 - 5 bit       10
+                                                                        11-19 and then 1a then 1b through a1 through b1 until ff and then 100
+explaining bytes....
+
+every 8 bit = 1 byte
+every 1024 bytes = 1 kilobyte (kb)
+every 1024 kb = 1 megabyte (mb)
+every 1024 mb = gigabyte (gb)
+
+
+since the code is binal, we eradicate the number 2
+
+2^8(256)        2^7(128)        2^6(64)        2^5(32)       2^4(16)       2^3(8)        2^2(4)     2^1(2)        2^0(1)
+                                                                1            0             0          0             0   =   16
+                                                  1             1            0             1          0             1   =   32+16+4+1   =   53
+    1
+if we put 1 under 2^8, the system will consider it negative
+so 110101=53 while 10110101=-53
