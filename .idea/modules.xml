@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Backend.iml" filepath="$PROJECT_DIR$/.idea/Backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaPRO/Homework/HW_Lesson02/HW_Lesson02.iml" filepath="$PROJECT_DIR$/JavaPRO/Homework/HW_Lesson02/HW_Lesson02.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaPRO/Homework/HW_Lesson04/HW_Lesson04.iml" filepath="$PROJECT_DIR$/JavaPRO/Homework/HW_Lesson04/HW_Lesson04.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaPRO/Classwork/Lesson01/Lesson01.iml" filepath="$PROJECT_DIR$/JavaPRO/Classwork/Lesson01/Lesson01.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaPRO/Classwork/Lesson02/Lesson02.iml" filepath="$PROJECT_DIR$/JavaPRO/Classwork/Lesson02/Lesson02.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaPRO/Classwork/Lesson03/Lesson03.iml" filepath="$PROJECT_DIR$/JavaPRO/Classwork/Lesson03/Lesson03.iml" />
