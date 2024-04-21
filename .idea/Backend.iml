@@ -2,7 +2,27 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 02 - Java, Literals, Variables, DataTypes/Lesson 0201/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 02 - Java, Literals, Variables, DataTypes/Lesson 0202/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 03 - Variables, DataTypes/Lesson 0301/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 04 - Logical Variable/Lesson 0401/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 04 - Logical Variable/Lesson 0402/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 05 - If, Else/Lesson 0501/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 05 - If, Else/Lesson 0502/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 06 - Practice with condition (If)/Lesson 0601/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 06 - Practice with condition (If)/Lesson 0602/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 07 - Switch, Case/Lesson 0701/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 07 - Switch, Case/Lesson 0701_Alt/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 08 - Methods/Lesson 0801/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 08 - Methods/Lesson 0801_Alt/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 09 - Practice with methods/Lesson 0901/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 09 - Practice with methods/Lesson 0902_Practice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 09 - Practice with methods/Lesson 0903_Practice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic/Classwork/Lesson 10 - Loops, While/Lesson 1001/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaPRO/Classwork/Lesson03/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaPRO/Classwork/Lesson03/src" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

@@ -4,14 +4,8 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/JavaPRO/Classwork/Lesson01/pom.xml" />
-        <option value="$PROJECT_DIR$/HW_Lesson02/pom.xml" />
+        <option value="$PROJECT_DIR$/Classwork/Lesson01/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/HW_Lesson02/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
