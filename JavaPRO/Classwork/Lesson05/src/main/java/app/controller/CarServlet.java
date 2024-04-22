@@ -20,7 +20,6 @@ public class CarServlet extends HttpServlet {
         // http://255.255.255.15:8080/cars?id=5 - наша задача получить идентификатор из запроса
         Map<String, String[]> parameters = req.getParameterMap();
         Long id = Long.parseLong(parameters.get("id")[0]);
-        resp.getWriter().write(repository.gatById(id).toString());
+        resp.getWriter().write(repository.getById(id).toString());
     }
-
 }

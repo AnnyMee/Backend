@@ -6,7 +6,7 @@ public interface CarRepository {
 
     Car save (Car car);
 
-    Car gatById(Long id);
+    Car getById(Long id);
 
     List<Car> getAll();
 

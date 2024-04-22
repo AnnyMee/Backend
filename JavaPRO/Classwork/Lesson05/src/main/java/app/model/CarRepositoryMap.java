@@ -26,7 +26,7 @@ public class CarRepositoryMap implements CarRepository {
     }
 
     @Override
-    public Car gatById(Long id) {
+    public Car getById(Long id) {
         return database.get(id);
     }
 
