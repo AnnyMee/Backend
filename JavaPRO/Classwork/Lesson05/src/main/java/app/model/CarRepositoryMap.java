@@ -1,7 +1,6 @@
 package app.model;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,7 +25,7 @@ public class CarRepositoryMap implements CarRepository {
     }
 
     @Override
-    public Car gatById(Long id) {
+    public Car getById(Long id) {
         return database.get(id);
     }
 
