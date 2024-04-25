@@ -1,3 +1,3 @@
 <body>
-<h1> Car application</h1>
+    <h1>Car application</h1>
 </body>

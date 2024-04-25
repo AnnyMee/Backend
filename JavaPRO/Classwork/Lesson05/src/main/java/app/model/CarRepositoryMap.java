@@ -8,14 +8,16 @@ import java.util.Map;
 public class CarRepositoryMap implements CarRepository {
 
     private Map<Long, Car> database = new HashMap<>();
+
     private long currentId;
 
     public CarRepositoryMap() {
         save(new Car("Volkswagen", new BigDecimal(10000), 2010));
         save(new Car("Mazda", new BigDecimal(30000), 2015));
         save(new Car("Honda", new BigDecimal(50000), 2020));
-    }
 
+
+    }
 
     @Override
     public Car save(Car car) {
@@ -31,17 +33,16 @@ public class CarRepositoryMap implements CarRepository {
 
     @Override
     public List<Car> getAll() {
-//        return new ArrayList<>(database.values());
-        return database.values().stream().toList();
+        return new ArrayList<>(database.values());
     }
 
     @Override
     public void update(Car car) {
         Car foundCar = database.get(car.getId());
-
-        if (foundCar != null){
+        if (foundCar != null) {
             foundCar.setPrice(car.getPrice());
         }
+
     }
 
     @Override

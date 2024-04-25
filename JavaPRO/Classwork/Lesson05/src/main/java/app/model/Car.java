@@ -36,22 +36,13 @@ public class Car {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         Car car = (Car) o;
-
-        if (year != car.year) return false;
-        if (!Objects.equals(id, car.id)) return false;
-        if (!Objects.equals(brand, car.brand)) return false;
-        return Objects.equals(price, car.price);
+        return year == car.year && Objects.equals(id, car.id) && Objects.equals(brand, car.brand) && Objects.equals(price, car.price);
     }
 
     @Override
     public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (brand != null ? brand.hashCode() : 0);
-        result = 31 * result + (price != null ? price.hashCode() : 0);
-        result = 31 * result + year;
-        return result;
+        return Objects.hash(id, brand, price, year);
     }
 
     @Override
