@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/customers")
+@RequestMapping("/customer")
 public class CustomerController {
 
     private CustomerService service;
@@ -16,7 +16,7 @@ public class CustomerController {
     public CustomerController(CustomerService service) {
         this.service = service;
     }
-    @GetMapping("/example")
+    @GetMapping
     public Customer getById(@RequestParam Long id){
         return service.getById(id);
     }
