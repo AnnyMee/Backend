@@ -7,17 +7,14 @@
     <changeSet id="add_customers" author="annymee">
 
         <insert tableName="customer">
-            <column name="is_active" value="true"/>
             <column name="name" value="Michael"/>
         </insert>
 
         <insert tableName="customer">
-            <column name="is_active" value="true"/>
             <column name="name" value="Liza"/>
         </insert>
 
         <insert tableName="customer">
-            <column name="is_active" value="true"/>
             <column name="name" value="Rita"/>
         </insert>
 
