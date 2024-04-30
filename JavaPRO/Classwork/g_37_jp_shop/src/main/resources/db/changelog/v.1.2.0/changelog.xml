@@ -9,6 +9,14 @@
     </changeSet>
 
     <include file="create-table-cart.xml" relativeToChangelogFile="true"/>
+    <include file="create-foreign-key-cart-to-customer.xml" relativeToChangelogFile="true"/>
     <include file="add-carts.xml" relativeToChangelogFile="true"/>
+    <include file="create-table-cart-product.xml" relativeToChangelogFile="true"/>
+    <include file="create-foreign-keys-cart-product.xml" relativeToChangelogFile="true"/>
+    <include file="add-products-to-carts.xml" relativeToChangelogFile="true"/>
+
+<!--    ВАЖНО соблюдать правильный порядок создания-->
+
+
 
 </databaseChangeLog>
