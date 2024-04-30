@@ -1,5 +1,6 @@
 package de.aittr.g_37_jp_shop.controller;
 
+import de.aittr.g_37_jp_shop.domen.dto.ProductDto;
 import de.aittr.g_37_jp_shop.domen.entity.Product;
 import de.aittr.g_37_jp_shop.service.interfaces.ProductService;
 import org.springframework.web.bind.annotation.*;
@@ -25,9 +26,15 @@ public class ProductController {
 
     // 2 способ: GET - localhost:8080/products/example?id=5 - если использовать этот метод, необходима аннотация в параметрах (@RequestParam)
     // не нужно менять строку в аннотации @GetMapping
-    @GetMapping("/example")
-    public Product getById(@RequestParam Long id){
+    @GetMapping
+    public ProductDto getById(@RequestParam Long id){
 
         return service.getById(id);
+    }
+
+    @PostMapping
+    public ProductDto save(@RequestBody ProductDto product){
+
+        return service.save(product);
     }
 }
