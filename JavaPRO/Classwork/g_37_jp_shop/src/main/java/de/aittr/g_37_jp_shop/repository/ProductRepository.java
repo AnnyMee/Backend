@@ -1,6 +1,6 @@
 package de.aittr.g_37_jp_shop.repository;
 
-import de.aittr.g_37_jp_shop.domen.entity.Product;
+import de.aittr.g_37_jp_shop.domain.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

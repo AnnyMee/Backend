@@ -1,6 +1,5 @@
-package de.aittr.g_37_jp_shop.domen.entity;
+package de.aittr.g_37_jp_shop.domain.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;

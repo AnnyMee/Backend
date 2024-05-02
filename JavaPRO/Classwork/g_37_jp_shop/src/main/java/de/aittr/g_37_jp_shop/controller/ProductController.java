@@ -1,7 +1,6 @@
 package de.aittr.g_37_jp_shop.controller;
 
-import de.aittr.g_37_jp_shop.domen.dto.ProductDto;
-import de.aittr.g_37_jp_shop.domen.entity.Product;
+import de.aittr.g_37_jp_shop.domain.dto.ProductDto;
 import de.aittr.g_37_jp_shop.service.interfaces.ProductService;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,7 +1,7 @@
 package de.aittr.g_37_jp_shop.service;
 
-import de.aittr.g_37_jp_shop.domen.dto.ProductDto;
-import de.aittr.g_37_jp_shop.domen.entity.Product;
+import de.aittr.g_37_jp_shop.domain.dto.ProductDto;
+import de.aittr.g_37_jp_shop.domain.entity.Product;
 import de.aittr.g_37_jp_shop.repository.ProductRepository;
 import de.aittr.g_37_jp_shop.service.interfaces.ProductService;
 import de.aittr.g_37_jp_shop.service.mapping.ProductMappingService;

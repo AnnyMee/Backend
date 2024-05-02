@@ -1,10 +1,9 @@
 package de.aittr.g_37_jp_shop.service.mapping;
 
-import de.aittr.g_37_jp_shop.domen.dto.ProductDto;
-import de.aittr.g_37_jp_shop.domen.entity.Product;
+import de.aittr.g_37_jp_shop.domain.dto.ProductDto;
+import de.aittr.g_37_jp_shop.domain.entity.Product;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.springframework.stereotype.Service;
 
 @Mapper(componentModel = "spring")
 public interface ProductMappingService {

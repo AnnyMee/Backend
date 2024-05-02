@@ -1,6 +1,6 @@
 package de.aittr.g_37_jp_shop.service;
 
-import de.aittr.g_37_jp_shop.domen.entity.Customer;
+import de.aittr.g_37_jp_shop.domain.entity.Customer;
 import de.aittr.g_37_jp_shop.repository.CustomerRepository;
 import de.aittr.g_37_jp_shop.service.interfaces.CustomerService;
 import org.springframework.stereotype.Service;

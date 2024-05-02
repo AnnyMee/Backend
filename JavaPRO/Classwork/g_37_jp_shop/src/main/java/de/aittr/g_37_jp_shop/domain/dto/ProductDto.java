@@ -1,4 +1,4 @@
-package de.aittr.g_37_jp_shop.domen.dto;
+package de.aittr.g_37_jp_shop.domain.dto;
 import java.math.BigDecimal;
 import java.util.Objects;
 
