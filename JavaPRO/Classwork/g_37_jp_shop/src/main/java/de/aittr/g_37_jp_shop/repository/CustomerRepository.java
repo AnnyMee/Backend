@@ -7,6 +7,8 @@ import org.springframework.data.repository.query.Param;
 
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
 
-    @Query(value = "SELECT * FROM product WHERE name = :name", nativeQuery = true)
-    Customer findByName(@Param("name") String customerName);
+    Customer findByName(String name);
+
+//    @Query(value = "SELECT * FROM product WHERE name = :name", nativeQuery = true)
+//    Customer findByName(@Param("name") String customerName);
 }
