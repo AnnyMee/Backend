@@ -84,7 +84,7 @@ public class TokenService {
         return getClaims(accessToken, accessKey);
     }
 
-    public Claims getRefreshToken (String refreshToken){
+    public Claims getRefreshClaims (String refreshToken){
         return getClaims(refreshToken, refreshKey);
     }
 
