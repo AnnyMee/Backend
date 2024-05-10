@@ -1,6 +1,6 @@
 FROM maven:3.8.0-openjdk-11 as build
 
-WORKDIR /app
+WORKDIR /workspace/app
 
 COPY . .
 
