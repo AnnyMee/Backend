@@ -1,7 +1,7 @@
 package de.aittr.g_37_jp_shop.domain.entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.*;
 import org.springframework.lang.NonNull;
 
 import java.math.BigDecimal;
@@ -18,9 +18,14 @@ public class Product {
 
     @Column(name = "title")
     @NotNull(message = "Product title cannot be null")
+    @NotBlank(message = "Product title cannot be empty")
+    @Pattern(regexp = "[A-Z][a-z]{2,}", message = "Product title should be at least 3 character length, start with a capital letter and may contain only latin characters")
     private String title;
 
     @Column(name = "price")
+    @NotNull(message = "Product price cannot be null")
+    @DecimalMin(value = "5.00", message = "Product price should be equal to or greater than 5")
+    @DecimalMax(value = "100000.00", inclusive = false, message = "Product price should be less than 100 000")
     private BigDecimal price;
 
     @Column(name = "is_active")
