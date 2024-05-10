@@ -1,6 +1,8 @@
 package de.aittr.g_37_jp_shop.domain.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import org.springframework.lang.NonNull;
 
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -15,6 +17,7 @@ public class Product {
     private Long id;
 
     @Column(name = "title")
+    @NotNull(message = "Product title cannot be null")
     private String title;
 
     @Column(name = "price")

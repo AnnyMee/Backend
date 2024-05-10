@@ -1,7 +1,6 @@
 package de.aittr.g_37_jp_shop.logging;
 
 import de.aittr.g_37_jp_shop.domain.dto.ProductDto;
-import de.aittr.g_37_jp_shop.service.ProductServiceImpl;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
