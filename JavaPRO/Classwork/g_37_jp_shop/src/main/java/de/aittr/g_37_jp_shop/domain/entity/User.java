@@ -32,6 +32,12 @@ public class User implements UserDetails {
     )
     private Set<Role> roles;
 
+    @Column(name = "is_active")
+    private boolean isActive;
+
+    @Column(name = "email")
+    private String email;
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return roles;
@@ -91,6 +97,22 @@ public class User implements UserDetails {
         this.roles = roles;
     }
 
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -98,10 +120,12 @@ public class User implements UserDetails {
 
         User user = (User) o;
 
+        if (isActive != user.isActive) return false;
         if (!Objects.equals(id, user.id)) return false;
         if (!Objects.equals(username, user.username)) return false;
         if (!Objects.equals(password, user.password)) return false;
-        return Objects.equals(roles, user.roles);
+        if (!Objects.equals(roles, user.roles)) return false;
+        return Objects.equals(email, user.email);
     }
 
     @Override
@@ -110,12 +134,14 @@ public class User implements UserDetails {
         result = 31 * result + (username != null ? username.hashCode() : 0);
         result = 31 * result + (password != null ? password.hashCode() : 0);
         result = 31 * result + (roles != null ? roles.hashCode() : 0);
+        result = 31 * result + (isActive ? 1 : 0);
+        result = 31 * result + (email != null ? email.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
-        return String.format("User: ID - %d, username - %s, role - %s", id, username, roles);
+        return String.format("User: ID - %d, username - %s, email - %s, active - %s, role - %s", id, username, email, isActive ? "Yes" : "No", roles);
     }
 
     //ручная генерация зашифрованного пароля для ручного добавления в БД тестовых пользователей
