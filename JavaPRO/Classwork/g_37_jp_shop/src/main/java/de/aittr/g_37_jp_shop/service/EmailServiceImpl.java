@@ -1,4 +1,4 @@
-package de.aittr.g_37_jp_shop.service.mapping;
+package de.aittr.g_37_jp_shop.service;
 
 import de.aittr.g_37_jp_shop.domain.entity.User;
 import de.aittr.g_37_jp_shop.service.interfaces.ConfirmationService;
