@@ -34,6 +34,9 @@ public class Product {
     @Column(name = "image")
     private String image;
 
+    @Column(name = "quantity")
+    private int quantity;
+
     public Product() {
     }
 
@@ -42,6 +45,14 @@ public class Product {
         this.title = title;
         this.price = price;
         this.isActive = isActive;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public String getImage() {
@@ -91,6 +102,7 @@ public class Product {
         Product product = (Product) o;
 
         if (isActive != product.isActive) return false;
+        if (quantity != product.quantity) return false;
         if (!Objects.equals(id, product.id)) return false;
         if (!Objects.equals(title, product.title)) return false;
         if (!Objects.equals(price, product.price)) return false;
@@ -104,11 +116,12 @@ public class Product {
         result = 31 * result + (price != null ? price.hashCode() : 0);
         result = 31 * result + (isActive ? 1 : 0);
         result = 31 * result + (image != null ? image.hashCode() : 0);
+        result = 31 * result + quantity;
         return result;
     }
 
     @Override
     public String toString() {
-        return String.format("Product: ID - %d, title - %s, price - %f.2, active - %s",id, title, price, isActive ? "Yes" : "No");
+        return String.format("Product: ID - %d, title - %s, price - %f.2, quantity - %d, active - %s",id, title, price, quantity, isActive ? "Yes" : "No");
     }
 }
