@@ -2,6 +2,7 @@ package de.aittr.g_37_jp_shop.service;
 
 import de.aittr.g_37_jp_shop.domain.entity.User;
 import de.aittr.g_37_jp_shop.repository.UserRepository;
+import de.aittr.g_37_jp_shop.service.interfaces.EmailService;
 import de.aittr.g_37_jp_shop.service.interfaces.RoleService;
 import de.aittr.g_37_jp_shop.service.interfaces.UserService;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -18,9 +19,13 @@ public class UserServiceImpl implements UserService {
     private UserRepository repository;
     private BCryptPasswordEncoder encoder;
     private RoleService roleService;
+    private EmailService emailService;
 
-    public UserServiceImpl(UserRepository repository) {
+    public UserServiceImpl(UserRepository repository, BCryptPasswordEncoder encoder, RoleService roleService, EmailService emailService) {
         this.repository = repository;
+        this.encoder = encoder;
+        this.roleService = roleService;
+        this.emailService = emailService;
     }
 
     @Override
@@ -38,6 +43,17 @@ public class UserServiceImpl implements UserService {
     public void register(User user) {
         user.setId(null);
         user.setPassword(encoder.encode(user.getPassword()));
+
+//        Role roleUser = roleService.getRoleUser();
+//        Set<Role> roles = new HashSet<>();
+//        roles.add(roleUser);
+//        user.setRoles(roles);
+        //same as the previous 4 rows
         user.setRoles(Set.of(roleService.getRoleUser()));
+
+        user.setActive(false);
+
+        repository.save(user);
+        emailService.sendConfirmationEmail(user);
     }
 }

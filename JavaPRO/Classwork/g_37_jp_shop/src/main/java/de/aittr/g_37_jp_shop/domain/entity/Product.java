@@ -31,6 +31,9 @@ public class Product {
     @Column(name = "is_active")
     private boolean isActive;
 
+    @Column(name = "image")
+    private String image;
+
     public Product() {
     }
 
@@ -39,6 +42,13 @@ public class Product {
         this.title = title;
         this.price = price;
         this.isActive = isActive;
+    }
+
+    public String getImage() {
+        return image;
+    }
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public Long getId() {
@@ -83,7 +93,8 @@ public class Product {
         if (isActive != product.isActive) return false;
         if (!Objects.equals(id, product.id)) return false;
         if (!Objects.equals(title, product.title)) return false;
-        return Objects.equals(price, product.price);
+        if (!Objects.equals(price, product.price)) return false;
+        return Objects.equals(image, product.image);
     }
 
     @Override
@@ -92,6 +103,7 @@ public class Product {
         result = 31 * result + (title != null ? title.hashCode() : 0);
         result = 31 * result + (price != null ? price.hashCode() : 0);
         result = 31 * result + (isActive ? 1 : 0);
+        result = 31 * result + (image != null ? image.hashCode() : 0);
         return result;
     }
 

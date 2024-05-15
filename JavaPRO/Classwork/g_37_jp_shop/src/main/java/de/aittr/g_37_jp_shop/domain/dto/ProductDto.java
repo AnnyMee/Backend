@@ -7,6 +7,14 @@ public class ProductDto {
     private Long id;
     private String title;
     private BigDecimal price;
+    private String image;
+
+    public String getImage() {
+        return image;
+    }
+    public void setImage(String image) {
+        this.image = image;
+    }
     public Long getId() {
         return id;
     }
@@ -40,7 +48,8 @@ public class ProductDto {
 
         if (!Objects.equals(id, that.id)) return false;
         if (!Objects.equals(title, that.title)) return false;
-        return Objects.equals(price, that.price);
+        if (!Objects.equals(price, that.price)) return false;
+        return Objects.equals(image, that.image);
     }
 
     @Override
@@ -48,6 +57,7 @@ public class ProductDto {
         int result = id != null ? id.hashCode() : 0;
         result = 31 * result + (title != null ? title.hashCode() : 0);
         result = 31 * result + (price != null ? price.hashCode() : 0);
+        result = 31 * result + (image != null ? image.hashCode() : 0);
         return result;
     }
 
